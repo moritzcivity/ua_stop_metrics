@@ -71,6 +71,6 @@ FROM intersect_ags
 GROUP BY item2012
 )
 
-SELECT DISTINCT buffer2012.item as haltestellen_nutzung, buffer2012.Prozent as haltestellen_prozent, t2012.item as ags_nutzung, t2012.Prozent as ags_prozent
-FROM buffer2012 FULL OUTER JOIN t2012
+SELECT DISTINCT buffer2012.item as haltestellen_nutzung, buffer2012.Prozent as haltestellen_prozent, t2012.item as ags_nutzung, t2012.Prozent as ags_prozent, stadt
+FROM bkg_select, buffer2012 FULL OUTER JOIN t2012
 ON t2012.item = buffer2012.item
