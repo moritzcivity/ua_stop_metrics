@@ -1,5 +1,5 @@
 WITH bkg_select as(
-/* gibt Polygon mit beistimmten ags Wert aus*/
+/* gibt Polygon mit beistimmten ags Wert ausxxxxxx*/
 SELECT
 bkg.vg250_gem_2017.ags  as ags,
 bkg.vg250_gem_2017.geom  as geom,
